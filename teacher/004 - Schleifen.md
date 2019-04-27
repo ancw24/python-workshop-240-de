@@ -59,4 +59,7 @@ for (schluessel, wert) in anna.items():
 ```
 1. Habt ihr was bemerkt? Da hat sich ein `str()` in unseren Code hinein gemogelt. Alle Datentypen (String, Integer, ...) haben auch eine Funktion um andere Typen umzuwandeln. In unserem Beispiel wandeln wir dabei zum Beispiel die Zahl 16 (Integer) von Annas Alter in die Zeichenkette "16" um.
 1. In Python kann man, im Gegensatz zu Programmiersprachen wie PHP oder JavaScript, nicht einfach beliebige Datentypen aneinander hängen. Wenn man Zahlen in einem String verwenden möchte, muss man sie also **immer** erst umwandeln.
- 
+
+---
+
+&gt; [3. Kontrollstrukturen](./003%20-%20Kontrollstrukturen.md)

@@ -17,3 +17,4 @@ Wenn du diesen Kurs unterrichten möchtest, dann startest du mit einem Klassiker
 1. [Hallo Welt](./teacher/001%20-%20Hallo%20Welt.md)
 1. [Variablen, Typen und Operatoren](./teacher/002%20-%20Variablen,%20Typen%20und%20Operatoren.md)
 1. [Kontrollstrukturen](./teacher/003%20-%20Kontrollstrukturen.md)
+1. [Schleifen](./teacher/004%20-%20Schleifen.md)
