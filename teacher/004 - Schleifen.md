@@ -62,4 +62,6 @@ for (schluessel, wert) in anna.items():
 
 ---
 
-&gt; [3. Kontrollstrukturen](./003%20-%20Kontrollstrukturen.md)
+&gt; [5. Funktionen](./005%20-%20Funktionen.md)
+  
+&lt; [3. Kontrollstrukturen](./003%20-%20Kontrollstrukturen.md)

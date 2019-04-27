@@ -20,7 +20,7 @@ Wir erstellen eine Datei "variablen.py".
    print(name)
    ```
    Das Ergebnis sollte so aussehen:
-   ```bash
+   ```test
    Dominik
    
    Process finished with exit code 0
@@ -46,7 +46,7 @@ Wir erstellen eine Datei "variablen.py".
    print(name)
    ```
    Das Ergebnis sollte so aussehen:
-   ```bash
+   ```test
    Dominik
    Peter
    
@@ -85,7 +85,7 @@ Wir erstellen eine Datei "variablen.py".
    print(ergebnis_1)
    ```
    Ergebnis:
-   ```bash
+   ```test
    15
    ```
 1. Subtrahieren
@@ -96,7 +96,7 @@ Wir erstellen eine Datei "variablen.py".
    print(ergebnis_2)
    ```
    Ergebnis:
-   ```bash
+   ```test
    -15
    ```
 1. Nanu ... was ist denn jetzt passiert? Wir sehen, dass Python auch it negativen Zahlen arbeiten kann. Wenn ihr also eine größere Zahl von einer kleineren abzieht, erhaltet ihr einen Wert der kleiner ist als Null. Das kennt ihr sicher vom Thermometer, wo es -10 Grad kalt sein kann.
@@ -108,7 +108,7 @@ Wir erstellen eine Datei "variablen.py".
    print(ergebnis_3)
    ```
    Ergebnis:
-   ```bash
+   ```test
    50
    ```
 1. Dividieren
@@ -119,7 +119,7 @@ Wir erstellen eine Datei "variablen.py".
    print(ergebnis_4)
    ```
    Ergebnis:
-   ```bash
+   ```test
    2.0
    ```
 1. Es fällt auf, dass wir eine Kommazahl zurück bekommen, obwohl wir vorher nur ganze Zahlen verwendet haben. Das liegt an den internen Berechnungen und Rundungen (Stichwort Genauigkeit) von Python und spielt für uns erst einmal keine Rolle.
@@ -159,7 +159,7 @@ Wir erstellen eine Datei "variablen.py".
    print(teilnehmer[1])
    ```    
    Ergebnis:
-   ```bash
+   ```test
    Paul
    ```
 1. Unsere Liste hat aktuell einen deutlichen Herrenüberschuss, also fügen wir doch mal noch eine Dame hinzu. Dafür verwenden wir die Methode `append`, die Listen von Hause aus schon mitbringen.
@@ -169,7 +169,7 @@ Wir erstellen eine Datei "variablen.py".
    print(teilnehmer)
    ```
    Ergebnis:
-   ```bash
+   ```test
    ['Peter', 'Paul', 'Marie', 'Lena']
    ```
 1. Natürlich können wir auch einen Eintrag löschen. Dazu brauchen wir die Methode `remove`.
@@ -179,7 +179,7 @@ Wir erstellen eine Datei "variablen.py".
    print(teilnehmer)
    ```
    Ergebnis:
-   ```bash
+   ```test
    ['Peter', 'Marie', 'Lena']
    ```
 1. Wenn wir einen Eintrag nicht anhand seines Wertes, sondern über seinen Index löschen möchten (wir erinnern uns dass der Index die numerische Zuordnung aller Einträge ist und bei 0 startet), dann verwenden wir die Funktion `del`. Was Funktionen genau sind erklären wir später noch.
@@ -189,7 +189,7 @@ Wir erstellen eine Datei "variablen.py".
    print(teilnehmer)
    ```
    Ergebnis:
-   ```bash
+   ```test
    ['Peter', 'Marie']
    ```
 1. Möchten wir wissen wie viele Einträge eine Liste hat, verwenden wir die Funktion `len`.
@@ -199,7 +199,7 @@ Wir erstellen eine Datei "variablen.py".
    print(student_count)
    ```
    Ergebnis:
-   ```bash
+   ```test
    2
    ```
 1. Das soll uns für Listen erst einmal genügen. Kommen wir zum Datentyp `Tuple`, der wie eine Liste funktioniert, jedoch nach dem Erstellen nicht mehr veränderbar ist. Tupel erkennt man daran, dass ihre Werte in runden Klammern aufgelistet werden.
@@ -209,7 +209,7 @@ Wir erstellen eine Datei "variablen.py".
    print(freunde)
    ```
    Ergebnis:
-   ```bash
+   ```test
    ['Alex', 'Maximilian', 'Anna', 'Sarah']
    ```
 1. Versuchen wir unseren Tupel `freunde` zu verändern, dann bekommen wir eine Fehlermeldung.
@@ -217,7 +217,7 @@ Wir erstellen eine Datei "variablen.py".
    freunde[0] = "Paul"
    ```
    Ergebnis:
-   ```bash
+   ```test
    Dominik
    Traceback (most recent call last):
    Peter
@@ -234,7 +234,7 @@ Wir erstellen eine Datei "variablen.py".
    print(anzahl_freunde)
    ```
    Ergebnis:
-   ```bash
+   ```test
    4
    ```
 1. So. Und schon sind wir bei unserem letzten Datentyp für dieesn Kurs, dem Verzeichnis `Dict` (= Dictionary). Was das ist erfahren wir gleich, aber fangen wir mal mit einem Beispiel an wo Listen an ihre Grenzen kommen.
