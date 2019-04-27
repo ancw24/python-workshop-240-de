@@ -1,5 +1,7 @@
 # Variablen, Typen und Operatoren
 
+Wir erstellen eine Datei "variablen.py".
+
 ## Variablen
 
 1. Was ist eine Variable?
@@ -251,20 +253,25 @@
 1. Deshalb kommen wir nun zum Verzeichnis, dass uns das Leben etwas einfacher macht. Bei einem Verzeichnis werden die Werte mit einem frei defiierbaren Schlüssel verknüpft `{"schlüssel": wert}`. Als Wert sind dann wieder alle Datentypen möglich, die wir zur Verfügung haben, egal ob `String`, `Integer`, oder `Tuple`, etc..
    ```python
    adressbuch = [
-     {"firstname": "Anna", "lastname": "Westermann", "age": 16, "email": "anna.westermann@gmail.com"},
-     {"firstname": "Paul", "lastname": "Franke", "age": 17, "email": "paul.franke@gmail.com"}
+     {"vorname": "Anna", "nachname": "Westermann", "alter": 16, "email": "anna.westermann@gmail.com"},
+     {"vorname": "Paul", "nachname": "Franke", "alter": 17, "email": "paul.franke@gmail.com"}
    ]
    ```
    In diesem Beispiel speichern wir mehrere Verzeichnisse in einer Liste. So sehen Daten später häufig aus, wenn wir sie aus verschiedenen Quellen (z.B. Datenbanken) lesen.
 1. Möchten wir jetzt Annas Nachnamen ausgeben, wird das nun deutlich lesbarer, da wir statt einem Zahlenschlüssel nun auch einen Textschlüssel haben.
    ```python
-   print(adressbuch[0]["firstname"])
+   print(adressbuch[0]["vorname"])
    ``` 
 1. Ist euch etwas aufgefallen? Ich habe in diesem Beispiel die Variable `adressbuch` mit einem neuen Wert überschrieben. Die verschachtelte Liste der adressbuch ist also weg und nur noch die Liste mit Verzeichnissen ist übrig.
 1. Möchten wir einen Wert aus einem Verzeichnis löschen, nutzen wir wieder die Funktion `del`, die wir vorher schon kennen gelernt haben. Nehmen wir bei Paul doch mal das Alter weg.
    ```python
-   del adressbuch[1]["age"]
+   del adressbuch[1]["alter"]
    
    print(adressbuch[1])
-   ``` 
-1. 
+   ```
+   
+---
+
+&gt; [3. Kontrollstrukturen](./003%20-%20Kontrollstrukturen.md)
+  
+&lt; [1. Hallo Welt](./001%20-%20Hallo%20Welt.md)

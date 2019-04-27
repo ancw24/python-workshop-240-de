@@ -12,3 +12,7 @@
 1. Bei Python wird auf viele Zeichen verzichtet, die in anderen Programmiersprachen üblich sind. So hat man z.B. keine Semikolons am Ende einer Zeile und auch nur sehr wenige Klammern.
 1. Klickt die Datei im Navigations-Fenster mit der rechten Maustaste an und wählt `Run "hello"` aus um die Datei auszuführen. Ihr könnt stattdessen auch im Editor die rechte Maustaste verwenden, wenn ihr die Datei gerade offen habt.
 1. Wenn alles geklappt hat, solltet ihr in der nun geöffneten Konsole sehen können, dass "Hallo Welt!" ausgegeben wird.
+
+---
+
+&gt; [2. Variablen, Typen und Operatoren](./002%20-%20Variablen,%20Typen%20und%20Operatoren.md)

@@ -84,12 +84,12 @@ adressbuch = [
 print(adressbuch[0][1])
 
 adressbuch = [
-    {"firstname": "Anna", "lastname": "Westermann", "age": 16, "email": "anna.westermann@gmail.com"},
-    {"firstname": "Paul", "lastname": "Franke", "age": 17, "email": "paul.franke@gmail.com"}
+    {"vorname": "Anna", "nachname": "Westermann", "alter": 16, "email": "anna.westermann@gmail.com"},
+    {"vorname": "Paul", "nachname": "Franke", "alter": 17, "email": "paul.franke@gmail.com"}
 ]
 
-print(adressbuch[0]["firstname"])
+print(adressbuch[0]["vorname"])
 
-del adressbuch[1]["age"]
+del adressbuch[1]["alter"]
 
 print(adressbuch[1])

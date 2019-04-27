@@ -1,5 +1,7 @@
 # Kontrollstrukturen
 
+Wir erstellen eine Datei "kontrollstrukturen.py".
+
 ## IF - ELSE
 
 1. Nachdem wir die Grundlagen von Variablen und Datentypen gelernt haben, möchten wir auch verschiedene Bedingungen in unserem Code verarbeiten können. Dafür benötigen wir Kontrollstrukturen und starten mit einem einfachen `if - else`.
@@ -124,3 +126,9 @@
    else:
        print("Es ist Wochenende!")
    ```
+
+---
+
+&gt; [4. Schleifen](./004%20-%20Schleifen.md)
+  
+&lt; [2. Variablen, Typen und Operatoren](./002%20-%20Variablen,%20Typen%20und%20Operatoren.md)
