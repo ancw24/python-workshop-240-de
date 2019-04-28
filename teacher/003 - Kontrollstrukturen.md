@@ -35,6 +35,31 @@ Wir erstellen eine Datei "kontrollstrukturen.py".
    ```python
    passwort_eingabe = "yolo"
    ```
+1. **Übungsaufgabe 01:**
+   -  Definiere eine Variable "stunde" und gib ihr eine Zahl zwischen 0 und 23
+   -  Schreibe folgende Bedingungen:
+      - Wenn die Stunde 0 ist, schreibe in die Konsole "Es ist Geisterstunde."
+      - Wenn die Stunde nicht 12 ist, schreibe in die Konsole "Es ist noch nicht soweit."
+   - Verändere den Wert der Variablen "stunde" um zu sehen ob deine Bedingnugen funktionieren.
+   
+   **Lösung:**
+   ```python
+   # Wir definieren die aktuelle Stunde
+   stunde = 0
+
+   # Bedingung: 0 Uhr ist die Geisterstunde
+   if stunde == 0:
+       print("Es ist Geisterstunde.")
+   # Bedingung: Alle anderen Stunden sind es nicht
+   else:
+       print("Es ist noch nicht soweit.")
+   ```
+   
+   **Konsole:**
+   
+   ```text
+   Es ist Geisterstunde.
+   ```
 
 ## Vergleichsoperatoren
 
@@ -63,7 +88,7 @@ Wir erstellen eine Datei "kontrollstrukturen.py".
    # Ist kleiner als oder genauso groß
    kleiner_oder_gleich = zahl <= 10
    ```
-
+   
 ## IF - ELIF - ELSE
 
 1. Manchmal möchte man verschiedene Bedingungen nacheinander prüfen. Dafür gib es z.B. das `elif`, das wir im folgenden Beispiel kennen lernen.
@@ -87,6 +112,46 @@ Wir erstellen eine Datei "kontrollstrukturen.py".
    
    Die Bedingung im `elif` wird nur geprüft, wenn die Bedingung im `if` nicht schon wahr ist.  
    Die Bedingung im `else` wird immer dann geprüft wenn gar keine vorige Bedingung wahr ist.
+1. **Übungsaufgabe 02:**
+   - Definiere eine Variable "name" und gib ihr einen netten Namen
+   - Definiere eine Variable "stunde" und gib ihr eine Zahl zwischen 0 und 23
+   - Wir wollen eine freundliche Begrüßung, abhängig von der Uhrzeit, ausgeben.  
+     Definiere folgende Bedingungen:
+     - Stunde 6 bis 11 => "Guten Morgen"
+     - Stunde 12 bis 17 => "Guten Tag"
+     - Stunde 18 bis 21 => "Guten Abend"
+     - Stunde 22 bis 5 => "Gute Nacht"
+   - Schreibe die Begrüßung, zusammen mit dem Namen, in die Konsole (z.B. "Guten Tag Dominik")
+   
+   **Lösung:**
+   ```python
+   # Wir definieren den Namen
+   name = "Dominik"
+   
+   # Wir definieren die Stunde
+   stunde = 6
+   
+   # Wir prüfen ob es Abend ist (18 - 21 Uhr)
+   if stunde >= 18:
+       begruessung = "Guten Abend"
+   # Wir prüfen ob es Tag ist  (12 - 17 Uhr)
+   elif stunde >= 12:
+       begruessung = "Guten Tag"
+   # Wir prüfen ob es Morgen ist  (6 - 11 Uhr)
+   elif stunde >= 6:
+       begruessung = "Guten Morgen"
+   # Alle anderen Zeiten sind Nacht
+   else:
+       begruessung = "Gute Nacht"
+   
+   print(begruessung + " " + name)
+   ```
+   
+   **Konsole:**
+   
+   ```text
+   Guten Morgen Dominik
+   ```
 
 ## Logische Operatoren
 
@@ -132,6 +197,43 @@ Wir erstellen eine Datei "kontrollstrukturen.py".
        print("Ich muss zur Schule gehen.")
    else:
        print("Es ist Wochenende!")
+   ```
+1. **Übungsaufgabe 03:**
+   - Stellen dir vor du möchtest mit Freunden zum Trampolinpark fahren und möchtest ein paar Freunde mitnehmen. Da du großzügig bist, lädst du sie alle ein.
+   - Definiere Variablen für:
+     - Die Anzahl Freunde die du gerne einladen möchtest
+     - Die Anzahl Sitzplätze in eurem Auto
+     - Dein aktuell verfügbares Taschengeld
+     - Den Eintrittspreis für den Trampolinpark
+   - Wir wollen nun, basierend auf den uns bekannten Werten, heraus finden ob dein Vorhaben klappt.  
+     Definiere folgende Bedingungen:
+     - Anzahl Personen (Du + Freunde + Fahrer) ist größer als die Anzahl Sitzplätze => "Das Auto ist leider zu klein."
+     - Gesamtpreis für dich und deine Freunde größer als dein Taschengeld => "Ich habe leider nicht genug Taschengeld."
+     - Es passen alle ins Auto und du hast genug Taschengeld => "Cool! Wir können in den Trampolinpark fahren!"
+   - Um die benötigten Werte für die Bedingungen ermitteln zu können, solltest du weitere Variablen anlegen (Tipp: Die Anzahl Personen die ins Auto müssen, wäre so eine Variable) und denke daran jeden Zwischenschritt mit `print` noch einmal zu überprüfen, damit du weißt ob das Richtige dabei heraus kommt.
+   
+   **Lösung:**
+   ```python
+   # Wir definieren die Anzahl Freunde
+   anzahl_freunde = 2
+   anzahl_sitzplaetze = 5
+   taschengeld = 10
+   eintrittspreis = 2
+   anzahl_mitfahrer = anzahl_freunde + 1
+   eintrittspreis_gesamt = anzahl_mitfahrer * eintrittspreis
+   
+   if anzahl_mitfahrer > anzahl_sitzplaetze:
+       print("Das Auto ist leider zu klein.")
+   elif eintrittspreis_gesamt > taschengeld:
+       print("Ich habe leider nicht genug Taschengeld.")
+   else:
+       print("Cool! Wir können in den Trampolinpark fahren!")
+   ```
+   
+   **Konsole:**
+   
+   ```text
+   Cool! Wir können in den Trampolinpark fahren!
    ```
 
 ---

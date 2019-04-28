@@ -27,6 +27,22 @@ Wir erstellen eine Datei "variablen.py".
    
    Process finished with exit code 0
    ```
+1. **Übungsaufgabe 01:**
+   - Definiere eine Variablen mit deiner Lieblingsfarbe
+   - Gib die Farben auf der Konsole aus 
+   
+   **Lösung:**
+   ```python
+   lieblingsfarbe = "blau"
+   
+   print(lieblingsfarbe)
+   ```
+   
+   **Konsole:**
+   
+   ```text
+   blau
+   ```
 1. Wir haben nun gesehen, dass wir Variablen zum Speichern von Informationen benutzen können, aber was ist wenn ich den Inhalt meiner Variablen später ändern möchte?
 1. Stellen wir uns mal vor dass ich lieber Peter heißen würde - also rein theoretisch. Ich möchte meinen Namen also ändern, nachdem er schon gespeichert ist.
 1. Das Ändern einer Variablen ist genauso einfach wie die Definition (= das Erstellen) am Anfang und sieht irgendwie auch ziemlich genau so aus.
@@ -54,6 +70,7 @@ Wir erstellen eine Datei "variablen.py".
 1. Nach diesem ersten kleinen Beispiel, schauen wir uns mal an welche Typen von Variablen wir am häufigsten brauchen werden. Der Typ einer Variablen entscheidet darüber was wir damit später alles anstellen können.
 1. Für unseren Namen haben wir den Typ `String` verwendet. Das ist eine beliebige Zeichenkette (= Aneinanderreihung von Zeichen), die alles mögliche enthalten kann. Strings erkennen wir daran, dass sie n einfachen oder doppelten Anführungszeichen geschrieben sind.
    ```python
+   # Beide Schreibweisen sind richtig
    spieler_1 = "Dominik"
    spieler_2 = 'Peter'
    ```
@@ -76,8 +93,24 @@ Wir erstellen eine Datei "variablen.py".
    ```text
    Hallo Anna und Lena!
    ```
-   
 1. Habt ihr was bemerkt? Das Plus-Symbol ist in diesem Fall unser Operator, der bei Variablen vom Typ `String` dafür verwendet wird, um diese miteinander zu verbinden. Das Zusammenfügen von Zeichenketten nennt man auch Konkatenieren.
+1. **Übungsaufgabe 02:**
+   - Definiere zwei Variablen mit 2 deiner Lieblingsfarben
+   - Gib folgende Meldung (natürlich mit deinen Farben) auf der Konsole aus "Meine Lieblingsfarben sind blau und gelb." 
+   
+   **Lösung:**
+   ```python
+   lieblingsfarbe_1 = "blau"
+   lieblingsfarbe_2 = "gelb"
+   
+   print("Meine Lieblingsfarben sind " + lieblingsfarbe_1 + " und " + lieblingsfarbe_2)
+   ```
+   
+   **Konsole:**
+   
+   ```text
+   Meine Lieblingsfarben sind blau und gelb
+   ```
 1. Ein paar weitere, einfache, Operatoren können wir lernen, in dem wir ein kleines Bisschen Mathe in unseren Beispielen aufleben lassen. Aber keine Sorge, wir halten es wirklich ganz einfach und schreiben keine komplizierten Formeln auf.
 1. Python unterstützt alle klassischen Berechnungen. Dies gilt aber nur für die neuen Datentypen `Integer` und `Float`. `Integer` wird für ganze Zahlen verwendet und `Float` für eine Zahl mit Komma (die sogennante Fließkommazahl).
    ```python
@@ -107,7 +140,6 @@ Wir erstellen eine Datei "variablen.py".
    ```text
    5
    ```
-1. Nanu ... was ist denn jetzt passiert? Wir sehen, dass Python auch it negativen Zahlen arbeiten kann. Wenn ihr also eine größere Zahl von einer kleineren abzieht, erhaltet ihr einen Wert der kleiner ist als Null. Das kennt ihr sicher vom Thermometer, wo es -10 Grad kalt sein kann.
 1. Multiplizieren
    ```python
    # Mal
@@ -148,6 +180,29 @@ Wir erstellen eine Datei "variablen.py".
    ```
 1. Hier sehen wir eine klassische Fehlermeldung in Python, bei der uns die letzten Schritte des Programmablaufs angezeigt werden und eine Beschreibung, was das Problem ist.
 1. Python sagt uns auf Englisch dass wir eben nicht durch Null (= zero) teilen (= division) können.
+1. **Übungsaufgabe 03:**
+   - Definiere zwei Variablen mit beliebigen Zahlen
+   - Schreibe Beispiele für alle Grundrechenarten (Plus, Minus, Mal, Geteilt) und gib das Ergebnis auf der Konsole aus  
+   
+   **Lösung:**
+   ```python
+   zahl_1 = 3
+   zahl_2 = 9
+
+   print(zahl_1 + zahl_2)
+   print(zahl_2 - zahl_1)
+   print(zahl_1 * zahl_2)
+   print(zahl_2 / zahl_1)
+   ```
+   
+   **Konsole:**
+   
+   ```text
+   12
+   6
+   27
+   3.0
+   ```
 1. So weit so gut. Schauen wir uns den nächsten Datentyp an, `List`. Listen werden dazu verwendet um mehrere Dinge in einer geordneten Reihenfolge zu speichern, wobei der Inhalt jedes einzelnen Dings veränderbar ist. Eine Liste erkennt man daran, dass ihre Werte in eckigen Klammern aufgelistet werden.
    ```python
    teilnehmer = ["Peter", "Paul", "Marie"]
@@ -164,6 +219,24 @@ Wir erstellen eine Datei "variablen.py".
    Ergebnis:
    ```text
    Paul
+   ```
+1. **Übungsaufgabe 04:**
+   - Definiere eine Liste mit 5 Freunden
+   - Schreibe den zweiten und den fünften Freund in die Konsole   
+   
+   **Lösung:**
+   ```python
+   freunde = ["Paul", "Peter", "Mary", "Anna", "Lena"]
+   
+   print(freunde[1])
+   print(freunde[4])
+   ```
+
+   **Konsole:**
+   
+   ```text
+   Peter
+   Lena
    ```
 1. Unsere Liste hat aktuell einen deutlichen Herren-Überschuss, also fügen wir mal schnell noch eine Dame hinzu. Dafür verwenden wir die Methode `append`, die Listen von Hause aus schon mitbringen.
    ```python
@@ -204,6 +277,24 @@ Wir erstellen eine Datei "variablen.py".
    ```
    
    Wir erinnern uns dass der Index einer Liste immer bei 0 startet. Wir löschen also das dritte Dings (= Lena) aus unserer Liste.
+1. **Übungsaufgabe 05:**
+   - Füge der Liste von Freunden neue hinzu und lösche welche, um zu üben
+   - Schreibe am Ende die letzte Version deiner Liste in die Konsole 
+   
+   **Lösung:**
+   ```python
+   freunde = ["Paul", "Maxi", "Anna", "Lena"]
+   freunde.append("Sarah")
+   freunde.remove("Anna")
+   
+   print(freunde)
+   ```
+
+   **Konsole:**
+   
+   ```text
+   ['Paul', 'Maxi', 'Lena', 'Sarah']
+   ```
 1. Möchten wir wissen wie viele Einträge eine Liste hat, verwenden wir die Methode `len`.
    ```python
    # Wir ermitteln die Anzahl Teilnehmer in unserer Liste
@@ -247,6 +338,25 @@ Wir erstellen eine Datei "variablen.py".
    ```
    Ergebnis:
    ```text
+   4
+   ```
+1. **Übungsaufgabe 06:**
+   - Definiere einen Tupel deiner Freunde
+   - Schreibe den Tupel in die Konsole
+   - Schreibe die Länge des Tupels in die Konsole 
+   
+   **Lösung:**
+   ```python
+   freunde = ("Paul", "Maxi", "Anna", "Lena")
+   
+   print(freunde)
+   print(len(freunde))
+   ```
+   
+   **Konsole:**
+   
+   ```text
+   ('Paul', 'Maxi', 'Anna', 'Lena')
    4
    ```
 1. So. Und schon sind wir bei unserem letzten Datentyp für heute, dem Verzeichnis `Dict` (= Dictionary). Was das genau ist erfahren wir gleich, aber fangen wir mal mit einem Beispiel an. Ich zeige euch wo Listen an ihre Grenzen kommen.
@@ -304,6 +414,32 @@ Wir erstellen eine Datei "variablen.py".
    del adressbuch[1]["alter"]
    
    print(adressbuch[1])
+   ```
+1. **Übungsaufgabe 07:**
+   - Speichere 2 Autos in einer Liste mit Verzeichnissen
+   - Jedes Verzeichnis hat mindestens die beiden Schlüssel "marke" und "modell" 
+   - Schreibe die Liste in die Konsole 
+   
+   **Lösung:**
+   ```python
+   autos = [
+       {
+           "marke": "Audi",
+           "modell": "A4"
+       },
+       {
+           "marke": "BMW",
+           "modell": "3 Cabrio"
+       },    
+   ]
+   
+   print(autos)
+   ```
+   
+   **Konsole:**
+   
+   ```text
+   [{'marke': 'Audi', 'modell': 'A4'}, {'marke': 'BMW', 'modell': '3 Cabrio'}]
    ```
    
 ---
