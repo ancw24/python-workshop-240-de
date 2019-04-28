@@ -17,7 +17,7 @@ freunde = ["Peter", "Paul", "Anna", "Lena"]
 for freund in freunde:
     print(freund)
 
-# Zählen wir nochmal
+# Zählen wir mit FOR
 
 for zahl in range(1, 5):
     print(zahl)
@@ -31,7 +31,7 @@ anna = {
     "email": "anna.westermann@gmail.com"
 }
 
-# Geben wir das doch mal alles der Reihe nach aus
+# Geben wir das alles der Reihe nach aus
 
 for (schluessel, wert) in anna.items():
     # print(schluessel + ": " + str(wert))

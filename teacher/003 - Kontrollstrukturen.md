@@ -4,8 +4,8 @@ Wir erstellen eine Datei "kontrollstrukturen.py".
 
 ## IF - ELSE
 
-1. Nachdem wir die Grundlagen von Variablen und Datentypen gelernt haben, möchten wir auch verschiedene Bedingungen in unserem Code verarbeiten können. Dafür benötigen wir Kontrollstrukturen und starten mit einem einfachen `if - else`.
-1. Ein einfaches Beispiel wäre die Prüfung ob ein eingegebenes Kennwort richtig ist.
+1. Nachdem wir die Grundlagen von Variablen und Datentypen gelernt haben, möchten wir auch verschiedene Bedingungen in unserem Code verarbeiten können. Dafür benötigen wir die sogenannten Kontrollstrukturen und starten mit einem einfachen `if - else`.
+1. Ein einfaches Beispiel ist die Prüfung ob ein eingegebenes Kennwort richtig ist.
    ```python
    # Das Passwort, das der Benutzer eingegeben hat
    passwort_eingabe = ""
@@ -18,7 +18,7 @@ Wir erstellen eine Datei "kontrollstrukturen.py".
    else:
        print("Das Passwort stimmt nicht!")
    ```
-1. Da ist jetzt schon eine ganze Menge Neues dabei. Das Wort `if` (= wenn) sagt Python dass wir eine Bedingung prüfen möchten. Darauf folgt unsere Bedingung, bei der wir sagen dass das eingegebene Passwort mit dem gespeicherten übereinstimmen muss.
+1. Da ist jetzt schon eine ganze Menge Neues dabei. Das Wort `if` (= wenn) sagt Python dass wir eine Bedingung prüfen möchten. Darauf folgt dann eine `Bedingung`, bei der wir sagen dass das eingegebene Passwort mit dem gespeicherten übereinstimmen muss.
 1. In der Bedingung entdecken wir zwei Gleichheitszeichen als Operator und die haben eine wichtige Bedeutung. Welche das ist sehen wir später in einer kleinen Auflistung der wichtigsten, Vergleichs-Operatoren die wir wohl am häufigsten brauchen werden.
 1. Bei Bedingungen kommt immer ein Warheitswert heraus, vom Typ `Boolean`, der nur 2 Werte haben kann: `True` (= wahr) und `False` (= unwahr).
 1. Wenn wir es übersetzen bedeutet der Code unserer IF-Bedingung also:
@@ -26,8 +26,12 @@ Wir erstellen eine Datei "kontrollstrukturen.py".
    wenn {passwort_eingabe} genau gleich {passwort}
    ```
 1. Mit dem darauf folgenden Doppelpunkt sagen wir Python dass alles was danach eingerückt kommt (dabei muss man auf die genaue Anzahl Zeichen zum Einrücken achten), ausgeführt werden soll wenn unsere Bedingung wahr ist.
-1. Da wir auch etwas ausgeben möchten, wenn unsere Bedingung nicht wahr ist, fügen wir den `else`-Teil hinzu. Alles was eingerückt nach `else` kommt wird immer dann ausgeführt, wenn die Bedingung von unserem `if` nicht wahr ist.
-1. Wenn wir den Wert von `passwort_eingabe` auf den gleichen Wert setzen wie den von `passwort`, sollten wir die Meldung sehen `Das Passwort ist korrekt!`.
+   ```
+   wenn {passwort_eingabe} genau gleich {passwort}
+       dann mache alles was eingerückt steht
+   ```
+1. Da wir auch etwas ausgeben möchten, wenn unsere Bedingung nicht wahr ist, fügen wir den `else`-Teil hinzu. Alles was eingerückt nach `else` kommt wird immer dann ausgeführt, wenn die Bedingung von unserem `if` **nicht** wahr ist.
+1. Wenn wir zum Testen den Wert von `passwort_eingabe` mal auf den gleichen Wert setzen wie den von `passwort`, sollten wir die Meldung sehen `Das Passwort ist korrekt!`.
    ```python
    passwort_eingabe = "yolo"
    ```
@@ -36,12 +40,15 @@ Wir erstellen eine Datei "kontrollstrukturen.py".
 
 1. Lasst uns nun, wie angekündigt, einen kurzen Blick auf die am meisten verwendeten Vergleichsoperatoren werfen.
    
+   Zur Erinnerung:  
+   Ein Operator ist ein bestimmtes Zeichen dass einen Wert veränderen oder vergleichen kann.
+   
    ```python
    # Ist genau gleich
    genau_gleich = passwort_eingabe == passwort
    
    # Ist nicht genau gleich
-   nicht_gleich = password != passwort
+   nicht_gleich = passwort_eingabe != passwort
    
    # Ist größer als
    zahl = 10
@@ -62,7 +69,7 @@ Wir erstellen eine Datei "kontrollstrukturen.py".
 1. Manchmal möchte man verschiedene Bedingungen nacheinander prüfen. Dafür gib es z.B. das `elif`, das wir im folgenden Beispiel kennen lernen.
 
    ```python
-   # Ein Kind diskutiert mit jemandem und sagt, abhängig von Alter und Beziehung dann folgendes ...
+   # Wir diskutieren mit jemandem und abhängig von ein paar Bedingungen sagen wir ...
    
    alter = 60
    mama = True

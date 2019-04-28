@@ -12,17 +12,25 @@ Wir erstellen eine Datei "schleifen.py".
    # Wir setzen den Startwert unseres Zähles
    zaehler = 1
 
-   # Bedingung: Zähler kleiner oder gleich 5   
+   # Bedingung: Zähler kleiner oder gleich 5 (wir könnten auch sagn < 6)
    while zaehler <= 5:
        print(zaehler)
     
        # Anpassen der Werte für unsere Abbruch-Bedingung, damit wir keine Endlosschleife haben
        zaehler = zaehler + 1
    ```
+   Ergebnis:
+   ```text
+   1
+   2
+   3
+   4
+   5
+   ```
 
 ## FOR
 
-1. Als nächstes schauen wir uns die `for`-Schleife an. Diese wird am häufigsten dazu verwendet um alle oder einen Teil der Elemente einer Liste oder eines Tupels zu durchlaufen.
+1. Als nächstes schauen wir uns die `for`-Schleife an. Diese wird am häufigsten dazu verwendet um alle oder einen Teil der Dingse in einer Liste oder einem Tupels zu durchlaufen.
 1. Geben wir doch mal eine Liste von Freunden aus.
    ```python
    # Meine Freunde
@@ -32,16 +40,23 @@ Wir erstellen eine Datei "schleifen.py".
    for freund in freunde:
        print(freund)
    ```
-1. Man kann mit der `for`-Schleife aber auch zählen oder eine bestimmte Anzahl Durchläufe starten.
+   Ergebnis:
+   ```text
+    Peter
+    Paul
+    Anna
+    Lena
+   ```
+1. Man kann mit der `for`-Schleife aber auch zählen oder eine bestimmte Anzahl Durchläufe starten, wie wir es bei der `while`-Schleife gesehen haben.
    ```python
-   # Zählen wir nochmal
+   # Zählen wir mit FOR
    
    for zahl in range(1, 6):
        print(zahl)
    ```
 1. Bei der Funktion `range` bestimmt die erste Zahl den Startwert und die zweite den Wert bei dem aufgehört wird. Beim zwiten Wert muss man darauf achten immer die gewünschte letzte Zahl + 1 zu nehmen.  
-1. Als letztes Beispiel schauen wir uns noch an wie man mit der `for`-Schleife ein Verzeichnis durchlaufen kann.
-1. Geben wir doch mal alle Infos aus, die wir über Anna gespeichert haben.
+1. Als letztes Beispiel schauen wir uns jetzt noch an wie man mit der `for`-Schleife ein Verzeichnis durchlaufen kann. Da gibt es nämlich ein paar Besonderheiten.
+1. Schreiben wir doch mal alles in die Konsole, was wir über Anna wissen.
 ```python
 # Was wir über Anna wissen
 
@@ -52,7 +67,7 @@ anna = {
     "email": "anna.westermann@gmail.com"
 }
 
-# Geben wir das doch mal alles der Reihe nach aus
+# Geben wir das alles der Reihe nach aus
 
 for (schluessel, wert) in anna.items():
     print(schluessel + ": " + str(wert))

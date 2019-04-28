@@ -9,7 +9,38 @@ if passwort_eingabe == passwort:
 else:
     print("Das Passwort stimmt nicht!")
 
-# Ein Kind diskutiert mit jemandem und sagt, abhängig von Alter und Beziehung dann folgendes ...
+# Ist genau gleich
+genau_gleich = passwort_eingabe == passwort
+
+print(genau_gleich)
+
+# Ist nicht genau gleich
+nicht_gleich = passwort_eingabe != passwort
+
+print(nicht_gleich)
+
+# Ist größer als
+zahl = 5
+groesser_als = zahl > 5
+
+print(groesser_als)
+
+# Ist größer als oder genauso groß
+groesser_oder_gleich = zahl >= 10
+
+print(groesser_als)
+
+# Ist kleiner als
+kleiner_als = zahl < 5
+
+print(kleiner_als)
+
+# Ist kleiner als oder genauso groß
+kleiner_oder_gleich = zahl <= 10
+
+print(kleiner_oder_gleich)
+
+# Wir diskutieren mit jemandem und abhängig von ein paar Bedingungen sagen wir ...
 
 alter = 60
 mama = True

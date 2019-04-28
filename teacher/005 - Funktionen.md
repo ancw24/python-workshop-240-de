@@ -3,7 +3,7 @@
 Wir erstellen eine Datei "funktionen.py".
 
 1. Funktionen sind dazu da um einen bestimmten Code immer wieder verwenden zu können. Dabei können auch verschiedene Werte übergeben werden, die den Ablauf beeinflussen.
-1. Schreiben wir doch mal eine ganz einfache Funktion, die jemanden begrüßen kann.
+1. Schreiben wir als erstes eine ganz einfache Funktion, die jemanden begrüßen kann.
    ```python
    # Eine freundliche Begrüßung
    
@@ -12,10 +12,15 @@ Wir erstellen eine Datei "funktionen.py".
    
    hallo("Paul")
    ```
+   Ergebnis:
+   ```text
+   Hallo Paul!
+   ```
    
-   Als erstes sagen wir Python mit dem Schlüsselwort `def` dass wir eine Funktion definieren wollen.
+   Erklärung:  
+   Zuerst sagen wir Python mit dem Schlüsselwort `def` dass wir eine Funktion definieren wollen.
    
-   Darauf folgt ein Name für die Funktion, über den wir diese später ansprechen können.
+   Darauf folgt ein Name für die Funktion, über den wir diese später ansprechen können. Achtet hier bitte, wie schon bei Variablen, auf sinnvolle Namen, die ihr auch Jahre später noch verstehen könnt.
    
    In einem runden Klammernpaar legen wir dann fest, welche Variablen  beim Aufrufen der Funktion übergeben werden können.  Diese Variablen nennt man bei Funktionen auch "Parameter".
    
@@ -55,8 +60,8 @@ Wir erstellen eine Datei "funktionen.py".
    
    Die Prüfung `if name` sorgt dann dafür dass wir nur dann versuchen den Namen zu verwenden, wenn er **nicht** `None` ist.
    
-   Und schon ist der Name optional und muss nicht unbedingt übergeben werden.
-1. Theoretisch kann eine Funktion beliebig viele Parameter haben, wir sollten uns jedoch auf einige wenige beschränken, da der Code später sonst sehr unlesbar und auch schlechter pflegbar wird.
+   Und schon ist das Angeben eines Namens keine Pflicht mehr.
+1. Theoretisch kann eine Funktion beliebig viele Parameter haben. Wir sollten uns jedoch auf einige wenige beschränken, da der Code später sonst sehr unlesbar und auch schlechter pflegbar wird.
 1. Ein Beispiel mit 2 Parametern is das Zusammenzählen von zwei Zahlen.
    ```python
    # Rechnen wir doch mal zusammen
@@ -77,7 +82,7 @@ Wir erstellen eine Datei "funktionen.py".
    
    Nanu ... was ist denn das? Da steht ja ein `return` in unserer Funktion.
    
-   In der Regel möchten wir eine Funktion dazu benutzen etwas bestimmtes zu tun und manchmal möchten wir dabei auch etwas zurück bekommen. Denn im echten Programmierer-Leben würden wir so gut wie niemals in `print` in einer Funktion verwenden.
+   In der Regel möchten wir eine Funktion dazu benutzen etwas bestimmtes zu tun und manchmal möchten wir dabei auch etwas zurück bekommen. Denn im echten Programmierer-Leben würden wir so gut wie niemals `print` in einer Funktion verwenden.
    
    Also sagen wir in unserer Funktion, dass wir die Lösung der einfachen Mathe-Aufgabe als Wert zurück bekommen möchten. Diesen Wert können wir dann entweder direkt ausgeben oder noch (wie im Beispiel) einer neuen Variablen zuweisen.
 ---
