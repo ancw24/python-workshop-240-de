@@ -49,7 +49,7 @@ mama = True
 if alter > 60:
     print("Du hast Recht.")
 # Wenn der andere noch nicht so alt ist, aber die Mama, dann hat sie natürlich auch Recht.
-elif mama == True:
+elif mama is True:
     print("Ja Mama.")
 # Wenn der andere aber nun weder alt ist, noch die Mama, dann haben wir selbstverständlich Recht.
 else:
@@ -58,12 +58,12 @@ else:
 # Der Freibad-Check
 
 taschengeld = 10
-eintritt = 2
-geoeffnet = True
+freibad_eintritt = 2
+freibad_geoeffnet = True
 
-if taschengeld >= eintritt and geoeffnet == True:
+if taschengeld >= freibad_eintritt and freibad_geoeffnet is True:
     print("Cool! Ich kann ins Freibad gehen!")
-elif taschengeld < eintritt:
+elif taschengeld < freibad_eintritt:
     print("Ich habe leider nicht mehr genug Taschengeld.")
 else:
     print("Das Freibad hat leider nicht offen.")
@@ -74,7 +74,7 @@ taschengeld = 1
 eintritt = 5
 mama_zahlt = True
 
-if taschengeld >= eintritt or mama_zahlt == True:
+if taschengeld >= eintritt or mama_zahlt is True:
     print("Cool! Ich kann ins Kino gehen!")
 else:
     print("Ich habe leider nicht mehr genug Taschengeld.")

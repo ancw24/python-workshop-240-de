@@ -8,17 +8,23 @@ name = "Peter"
 
 print(name)
 
-# Variablen für die Spieler anlegen
+# Variablen für zwei Mitspieler anlegen
 spieler_1 = "Anna"
 spieler_2 = "Lena"
 
-# Die Nachricht aus verschiedenen Teilen zusammen bauen
+# Die Nachricht aus verschiedenen Strings zusammen bauen
 nachricht = "Hallo " + spieler_1 + " und " + spieler_2 + "!"
 
 print(nachricht)
 
-# Definition von zwei Variablen für unsere Zahlen
+# Definition einer Variablen vom Typ "Integer"
 zahl_1 = 5
+
+# Definition einer Variablen vom Typ "Float"
+zahl_2 = 10.0
+
+# Da wir nicht immer eine Kommazahl als Ergebnis haben wollen, nehmen wir
+# doch lieber "Integer" für unsere zweite Zahl
 zahl_2 = 10
 
 # Plus
@@ -46,15 +52,15 @@ print(ergebnis)
 
 # Listen
 
-teilnehmer = ["Peter", "Paul", "Marie"]
+teilnehmer = ["Peter", "Paul", "Anna"]
 
 print(teilnehmer)
 
 # Wir lesen das zweite Dings aus unerer Liste
 print(teilnehmer[1])
 
-# Wir fügen Lena zu unserer Liste der Teilnehmer hinzu
-teilnehmer.append("Lena")
+# Wir fügen Sarah zu unserer Liste der Teilnehmer hinzu
+teilnehmer.append("Sarah")
 
 print(teilnehmer)
 
@@ -72,6 +78,11 @@ print(teilnehmer)
 anzahl_teilnehmer = len(teilnehmer)
 
 print(anzahl_teilnehmer)
+
+# Wir ermitteln die Anzahl Zeichen eines Strings
+name = 'Dominik'
+
+print(len(name))
 
 # Tupel
 

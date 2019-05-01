@@ -1,6 +1,6 @@
 # Schleifen
 
-Wir erstellen eine Datei "schleifen.py".
+1. Erstellt eine neue Datei mit dem Namen "schleifen.py".
 
 ## WHILE
 

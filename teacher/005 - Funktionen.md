@@ -1,12 +1,10 @@
 # Funktionen
 
-Wir erstellen eine Datei "funktionen.py".
-
+1. Erstellt eine neue Datei mit dem Namen "funktionen.py".
 1. Funktionen sind dazu da um einen bestimmten Code immer wieder verwenden zu können. Dabei können auch verschiedene Werte übergeben werden, die den Ablauf beeinflussen.
 1. Schreiben wir als erstes eine ganz einfache Funktion, die jemanden begrüßen kann.
    ```python
    # Eine freundliche Begrüßung
-   
    def hallo(name):
        print("Hallo " + name + "!")
    
@@ -85,6 +83,59 @@ Wir erstellen eine Datei "funktionen.py".
    In der Regel möchten wir eine Funktion dazu benutzen etwas bestimmtes zu tun und manchmal möchten wir dabei auch etwas zurück bekommen. Denn im echten Programmierer-Leben würden wir so gut wie niemals `print` in einer Funktion verwenden.
    
    Also sagen wir in unserer Funktion, dass wir die Lösung der einfachen Mathe-Aufgabe als Wert zurück bekommen möchten. Diesen Wert können wir dann entweder direkt ausgeben oder noch (wie im Beispiel) einer neuen Variablen zuweisen.
+   
+   Es ist dabei wichtig zu wissen, dass ein `return` die Funktion **sofort** beendet. Alles was nach einem `return` steht, wird **nicht** mehr gemacht.
+1. **Übungsaufgabe 01:**
+   - Erinnern wir uns an unseren Freibad-Check. 
+   - Wir haben dabei 3 Variablen verwendet:
+     - Wie viel Taschengeld wir noch haben
+     - Wie viel der Eintritt kostet
+     - Ob das Freibad geöffnet ist
+   - Wir möchten nun eine Funktion schreiben, die uns einen Wahrheitswert (also vom Typ `Boolean`) zurück gibt.
+   - Schau dir die Bedingungen von unserem Freibad-Check noch einmal an und baue diese in eine Funktion ein.
+   
+   **Lösung 1:**
+   ```python
+   def kann_ich_ins_freibad_gehen(taschengeld, eintritt, freibad_geoeffnet = True):  
+       if taschengeld >= eintritt and freibad_geoeffnet is True:
+           return True
+       elif taschengeld < eintritt:
+           return False
+       else:
+           return False
+   ```
+   
+   **Lösung 2:**
+   ```python
+   def kann_ich_ins_freibad_gehen(taschengeld, eintritt, freibad_geoeffnet=True):
+       if taschengeld >= eintritt and freibad_geoeffnet is True:
+           return True
+   
+       return False
+   ```
+   
+   **Überprüfung:**
+   ```python
+   # Wir haben weniger Taschengeld als der Eintritt kostet und das Freibad ist geöffnet
+   wenig_taschengeld = kann_ich_ins_freibad_gehen(1, 2)
+   print(wenig_taschengeld)
+   
+   # Wir haben mehr Taschengeld als der Eintritt kostet und das Freibad ist geöffnet
+   viel_taschengeld = kann_ich_ins_freibad_gehen(10, 2)
+   print(viel_taschengeld)
+   
+   # Wir haben mehr Taschengeld als der Eintritt kostet, aber das Freibad ist geschlossen
+   viel_taschengeld_freibad_zu = kann_ich_ins_freibad_gehen(10, 2, False)
+   print(viel_taschengeld_freibad_zu)
+   ```
+   
+   **Konsole:**
+   
+   ```text
+   False
+   True
+   False   
+   ```
 ---
 
 &lt; [4. Schleifen](./004%20-%20Schleifen.md)

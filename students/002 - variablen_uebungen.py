@@ -23,7 +23,7 @@ print(zahl_2 / zahl_1)
 
 # Übungsaufgabe 04
 
-freunde = ["Paul", "Peter", "Mary", "Anna", "Lena"]
+freunde = ["Paul", "Peter", "Mark", "Anna", "Lena"]
 
 print(freunde[1])
 print(freunde[4])
