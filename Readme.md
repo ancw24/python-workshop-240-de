@@ -1,4 +1,4 @@
-# Python Crash-Kurs in 60 Minuten
+# Python Crash-Kurs in 120 Minuten
 
 ## Worum geht's?
 
