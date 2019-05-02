@@ -21,18 +21,3 @@ for freund in freunde:
 
 for zahl in range(1, 5):
     print(zahl)
-
-# Was wir über Anna wissen
-
-anna = {
-    "vorname": "Anna",
-    "nachname": "Westermann",
-    "alter": 16,
-    "email": "anna.westermann@gmail.com"
-}
-
-# Geben wir das alles der Reihe nach aus
-
-for (schluessel, wert) in anna.items():
-    # print(schluessel + ": " + str(wert))
-    print(schluessel.title() + ": " + str(wert))

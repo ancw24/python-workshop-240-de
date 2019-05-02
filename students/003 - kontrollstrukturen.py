@@ -43,13 +43,13 @@ print(kleiner_oder_gleich)
 # Wir diskutieren mit jemandem und abhängig von ein paar Bedingungen sagen wir ...
 
 alter = 60
-mama = True
+ist_mama = True
 
 # Wenn der andere älter als 60 ist, wird er ganz bestimmt Recht haben.
 if alter > 60:
     print("Du hast Recht.")
 # Wenn der andere noch nicht so alt ist, aber die Mama, dann hat sie natürlich auch Recht.
-elif mama is True:
+elif ist_mama is True:
     print("Ja Mama.")
 # Wenn der andere aber nun weder alt ist, noch die Mama, dann haben wir selbstverständlich Recht.
 else:
@@ -84,6 +84,6 @@ else:
 wochentag = 1  # 1 = Montag, 2 = Dienstag, ... 7 = Sonntag
 
 if not(wochentag == 6) and not(wochentag == 7):
-    print("Ich muss zur Schule gehen.")
+    print("Ich darf zur Schule gehen.")
 else:
     print("Es ist Wochenende!")

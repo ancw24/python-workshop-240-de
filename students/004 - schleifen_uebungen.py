@@ -18,27 +18,3 @@ farben = ["Rot", "Grün", "Blau"]
 # Wir geben die Farben nacheinander aus
 for farbe in farben:
     print(farbe)
-
-# Übungsaufgabe 03
-
-# Wir definieren unsere Autos
-autos = [
-    {
-        "marke": "Audi",
-        "modell": "A4",
-        "farbe": "Rot"
-    },
-    {
-        "marke": "BMW",
-        "modell": "3er Cabrio",
-        "farbe": "Schwarz"
-    }
-]
-
-# Wir laufen durch die Liste der Autos
-for auto in autos:
-    # Wir laufen durch die Eigenschaften des Autos
-    for key, value in auto.items():
-        print(key + " " + value)
-
-    print("")

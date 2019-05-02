@@ -1,18 +1,19 @@
 # Eine freundliche Begrüßung
 
+
 def hallo(name):
     print("Hallo " + name + "!")
+
 
 hallo("Paul")
 # hallo()
 
 # Eine freundliche Begrüßung für jedermann
 
-def hallo_alle(name = None):
-    if name:
-        print("Hallo " + name + "!")
-    else:
-        print("Hallo Unbekannter!")
+
+def hallo_alle(name="Unbekannter"):
+    print("Hallo " + name + "!")
+
 
 hallo_alle()
 

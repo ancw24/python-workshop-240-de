@@ -10,6 +10,7 @@
    ```
 1. Wenn wir diesen Code ausführen, wird der die Information `Dominik` in der Variablen `name` gespeichert. Python kennt nun also meinen Namen. Das ist doch schon mal was.
 1. Wichtig ist, dass ihr immer "sprechende" Namen für Variablen verwendet. Wenn ihr nämlich statt `name` einfach nur `n = "dominik"` schreiben würdet, wüsste niemand was die Abkürzung `n` bedeutet. Man könnte dann ja auch vermuten `n` stünde für `nikolaus`oder `niemand`.  
+1. In Python sollten Variablen in den meisten Fällen auch klein geschrieben werden und später schrebt man Code nur noch auf Englisch.
 1. Wenn ihr einer Variablen einen Namen geben möchtet, der aus mehreren Worten besteht, dann nehmt ihr den Unterstrich zur Hilfe. Beispiel: `mein_name` 
 1. Nun schauen wir doch mal, ob wir mit meinem gespeicherten Namen auch irgendetwas anfangen können. Wie wäre es denn damit den Namen einfach mal anzuzeigen?
    ```python
@@ -87,7 +88,7 @@
    spieler_1 = "Anna"
    spieler_2 = "Lena"
 
-   # Eine Nachricht aus verschiedenen Strings zusammen bauen
+   # Eine Nachricht aus verschiedenen Strings zusammenbauen
    nachricht = "Hallo " + spieler_1 + " und " + spieler_2 + "!"
 
    print(nachricht)
@@ -255,6 +256,8 @@
    ```
 1. Unsere Teilnehmer-Liste hat aktuell einen deutlichen Jungs-Überschuss, also fügen wir mal schnell noch Sarah hinzu. Dafür verwenden wir die Methode `append`, die unsere Listen von Hause aus schon mitbringen.
    ```python
+   teilnehmer = ["Peter", "Paul", "Anna"]
+
    # Wir fügen Sarah zu unserer Liste der Teilnehmer hinzu
    teilnehmer.append("Sarah")
    

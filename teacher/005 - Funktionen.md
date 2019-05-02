@@ -20,9 +20,29 @@
    
    Darauf folgt ein Name für die Funktion, über den wir diese später ansprechen können. Achtet hier bitte, wie schon bei Variablen, auf sinnvolle Namen, die ihr auch Jahre später noch verstehen könnt.
    
-   In einem runden Klammernpaar legen wir dann fest, welche Variablen  beim Aufrufen der Funktion übergeben werden können.  Diese Variablen nennt man bei Funktionen auch "Parameter".
+   In einem runden Klammernpaar legen wir dann fest, welche Variablen  beim Aufrufen der Funktion übergeben werden können. Diese Variablen nennt man bei Funktionen auch "Parameter".
    
    Alles was innerhalb der Funktion (= eingerückt) ist, wird beim Aufrufen ausgeführt.
+1. Parameter einer Funktion existieren **nur** innerhalb dieser Funktion als Variablen und sind außerhalb nicht bekannt. Ein kleines Beispiel dazu:
+   ```python
+   zahl_1 = 5
+   zahl_2 = 10
+   ergebnis = zahl_1 + zahl_2
+   
+   def rechne(zahl_1, zahl_2):
+       ergebnis = zahl_1 + zahl_2
+    
+   rechne(1, 1)
+
+   print(ergebnis)
+   ```
+   
+   Konsole:
+   ```text
+   15
+   ```
+   
+   Wir sehen, dass in der Variablen `ergebnis` immer noch 15 steht, da sie nichts mit der "lokalen" Variablen in der Funktion zu tun hat, auch wenn beide den gleichen Namen haben.
 1. Jetzt hat unsere kleine Funktion aber noch ein Problem. Wenn wir den Namen gar nicht wissen, bekommen wir eine Fehlermeldung.
    ```python
    hallo()
@@ -41,22 +61,15 @@
    ```python
    # Eine freundliche Begrüßung für jedermann
    
-   def hallo_alle(name = None):
-       if name:
-           print("Hallo " + name + "!")
-       else:
-           print("Hallo Unbekannter!")
-   
+   def hallo_alle(name="Unbekannter"):
+       print("Hallo " + name + "!")
+          
    hallo_alle()
    ```
    Ergebnis:
    ```text
    Hallo Unbekannter
    ```
-   
-   Der Wert `None` ist in diesem Fall etwas Besonderes. Damit kann man sagen dass der Parameter zwar angegeben werden kann, andernfalls aber einfach den Wert "Nichts" hat.
-   
-   Die Prüfung `if name` sorgt dann dafür dass wir nur dann versuchen den Namen zu verwenden, wenn er **nicht** `None` ist.
    
    Und schon ist das Angeben eines Namens keine Pflicht mehr.
 1. Theoretisch kann eine Funktion beliebig viele Parameter haben. Wir sollten uns jedoch auf einige wenige beschränken, da der Code später sonst sehr unlesbar und auch schlechter pflegbar wird.

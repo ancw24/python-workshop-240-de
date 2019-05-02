@@ -12,7 +12,7 @@ print(name)
 spieler_1 = "Anna"
 spieler_2 = "Lena"
 
-# Die Nachricht aus verschiedenen Strings zusammen bauen
+# Die Nachricht aus verschiedenen Strings zusammenbauen
 nachricht = "Hallo " + spieler_1 + " und " + spieler_2 + "!"
 
 print(nachricht)

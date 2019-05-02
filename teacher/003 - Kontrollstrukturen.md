@@ -39,7 +39,7 @@
    -  Definiere eine Variable "stunde" und gib ihr eine Zahl zwischen 0 und 23
    -  Schreibe folgende Bedingungen:
       - Wenn die Stunde 0 ist, schreibe in die Konsole "Es ist Geisterstunde."
-      - Wenn die Stunde nicht 12 ist, schreibe in die Konsole "Es ist noch nicht soweit."
+      - Wenn die Stunde nicht 0 ist, schreibe in die Konsole "Es ist noch nicht soweit."
    - Verändere den Wert der Variablen "stunde" um zu sehen ob deine Bedingnugen funktionieren.
    
    **Lösung:**
@@ -107,13 +107,13 @@
    # Wir diskutieren mit jemandem und abhängig von ein paar Bedingungen sagen wir ...
    
    alter = 60
-   mama = True
+   ist_mama = True
    
    # Wenn der / die andere älter als 60 ist, wird er ganz bestimmt Recht haben.
    if alter > 60:
        print("Du hast Recht.")
    # Wenn der / die andere noch nicht so alt ist, aber die Mama, dann hat sie natürlich auch Recht.
-   elif mama is True:
+   elif ist_mama is True:
        print("Ja Mama.")
    # Wenn der / die andere aber nun weder alt ist, noch die Mama, dann haben wir selbstverständlich Recht.
    else:
@@ -203,10 +203,10 @@
    
    wochentag = 1  # 1 = Montag, 2 = Dienstag, ... 7 = Sonntag
    
-   if not(wochentag == 6) and not(wochentag == 7):
-       print("Ich muss zur Schule gehen.")
-   else:
+   if wochentag == 6 or wochentag == 7:
        print("Es ist Wochenende!")
+   else:
+       print("Ich darf zur Schule gehen.")
    ```
 1. **Übungsaufgabe 03:**
    - Stellen dir vor du möchtest mit Freunden zum Trampolinpark fahren und möchtest ein paar Freunde mitnehmen. Da du großzügig bist, lädst du sie alle ein.
